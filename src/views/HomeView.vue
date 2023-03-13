@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <main-container class="flex items-center h-screen font-semibold text-3xl">
+        <main-container class="flex items-center h-[calc(100vh-3rem)] font-semibold text-3xl">
             <aside class="flex-1">
                 <p>Hi, I'm Jeff</p>
             </aside>

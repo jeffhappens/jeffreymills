@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <main-container class="py-4 font-bold flex items-center justify-between">
+    <main-container class="h-12 font-bold flex items-center justify-between">
         <p><router-link class="home" to="/">Portfolio.</router-link></p>
         <ul class="flex gap-5 font-normal text-gray-500">
             <li><router-link to="/work">Work</router-link></li>
