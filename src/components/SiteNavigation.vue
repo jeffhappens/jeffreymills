@@ -7,7 +7,7 @@
         <p class="text-xl">
             <router-link class="home" to="/">Portfolio.</router-link>
         </p>
-        <ul class="flex items-center gap-4 text-gray-500">
+        <ul class="flex items-center gap-4 text-gray-500 font-normal">
             <li>
                 <router-link to="/work">Work</router-link>
             </li>
