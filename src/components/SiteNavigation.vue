@@ -12,12 +12,12 @@
             <li><router-link to="/about">About</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li> -->
             <li class="ml-8">
-                <a href="" title="View my LinkedIn Profile">
+                <a href="https://www.linkedin.com/in/jeffreyalanmills" title="View my LinkedIn Profile">
                     <font-awesome-icon class="text-linkedin-500 text-3xl" icon="fa-brands fa-linkedin" />
                 </a>
             </li>
             <li>
-                <a href="" title="View my Github Profile">
+                <a href="https://www.github.com/jeffhappens" title="View my Github Profile">
                     <font-awesome-icon class="text-github-500 text-3xl" icon="fa-brands fa-square-github" />
                 </a>
             </li>
