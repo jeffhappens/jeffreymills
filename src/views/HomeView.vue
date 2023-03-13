@@ -1,12 +1,16 @@
 <template>
-    <div class="home">
+    <div class="home relative overflow-x-hidden">
+        <div class="absolute top-1/3 -rotate-6 left-0 -z-10 w-full h-48 bg-gray-100"></div>
+
         <main-container class="flex items-center h-[calc(100vh-3rem)] font-semibold text-3xl">
+            
             <aside class="flex-1">
                 <p>Hi, I'm Jeff</p>
             </aside>
             <section class="w-3/4 text-7xl font-bold">
                 <h1 class="mb-6">I develop cutting edge websites and apps using modern tools like Laravel and VueJS.</h1>
                 <p class="text-2xl text-amber-500">I will turn your design into a working product.</p>
+
             </section>
             
         </main-container>
@@ -15,7 +19,6 @@
 
 <script setup>
     import MainContainer from '../components/layout/MainContainer.vue'
-
     // @ is an alias to /src
 
     // export default {
