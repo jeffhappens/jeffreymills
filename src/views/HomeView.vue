@@ -6,15 +6,16 @@
         </div> -->
 
         <main-container class="h-[calc(100vh-3.5rem)] flex flex-col justify-evenly">
+        
             
-            <aside class="font-bold text-xl">
+            <aside class="font-bold text-2xl text-gray-600 lg:text-3xl">
                 <p>Hi, I'm Jeff</p>
             </aside>
-            <section class="font-bold text-5xl">
+            <section class="font-bold text-5xl md:text-6xl lg:text-7xl max-w-4xl">
                 <h1>I develop cutting edge websites and apps using modern tools like Laravel and VueJS.</h1>
             </section>
-            <aside class="text-lg text-gray-500">
-                <p>I can turn your design into a working product.</p>
+            <aside class="text-lg text-gray-600 font-semibold lg:text-xl">
+                <p>I can help turn your design into a working product.</p>
             </aside>
             
         </main-container>
