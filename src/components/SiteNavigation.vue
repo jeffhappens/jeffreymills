@@ -3,11 +3,11 @@
 </script>
 
 <template>
-    <main-container class="h-12 w-full font-bold flex items-center justify-between">
+    <main-container class="h-12 font-bold flex items-center justify-between">
         <p class="text-xl">
             <router-link class="home" to="/">Jeff Mills / <span class="text-amber-500">Developer Portfolio.</span></router-link>
         </p>
-        <ul class="flex items-center gap-4 text-gray-500 font-normal">
+        <ul class="flex items-center gap-2 text-gray-500 font-normal">
             <!-- <li><router-link to="/work">Work</router-link></li>
             <li><router-link to="/about">About</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li> -->

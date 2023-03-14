@@ -1,20 +1,21 @@
 <template>
     <div class="home relative overflow-x-hidden">
 
-        <div class="bg">
+        <!-- <div class="bg">
             <div class="rect"></div>
-        </div>
+        </div> -->
 
-        <main-container class="flex items-center h-[calc(100vh-3rem)] font-semibold text-3xl">
+        <main-container class="h-[calc(100vh-3rem)] flex flex-col justify-evenly">
             
-            <aside class="flex-1 greeting">
+            <aside class="font-bold text-xl">
                 <p>Hi, I'm Jeff</p>
             </aside>
-            <section class="w-3/4 text-7xl font-bold message">
-                <h1 class="mb-6">I develop cutting edge websites and apps using modern tools like Laravel and VueJS.</h1>
-                <p class="text-2xl text-gray-500">I can turn your design into a working product.</p>
-
+            <section class="font-bold text-5xl">
+                <h1>I develop cutting edge websites and apps using modern tools like Laravel and VueJS.</h1>
             </section>
+            <aside class="text-lg text-gray-500">
+                <p>I can turn your design into a working product.</p>
+            </aside>
             
         </main-container>
     </div>
@@ -34,7 +35,7 @@
 .greeting {
     opacity: 0;
     animation-name: slideDown;
-    animation-delay: .15s;
+    animation-delay: 1500ms;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-direction: alternate;
@@ -42,7 +43,7 @@
 .message {
     opacity: 0;
     animation-name: slideInLeft;
-    animation-delay: .15s;
+    animation-delay: 1500ms;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-direction: alternate;
@@ -61,15 +62,13 @@
 }
 .rect {
     transition: .3s ease all;
-    width: 100%;
-    height: 0;
+    /* width: 100%; */
+    height: 50px;
     background: #eee;
 
-
-
-    animation-name: fullHeight;
-    animation-duration: 500ms;
-    animation-delay: 250ms; /* add this */
+    animation-name: fullWidth, fullHeight;
+    animation-duration: 750ms;
+    animation-delay: 250ms, 1000ms; /* add this */
     animation-timing-function: cubic-bezier(0.04, 0.65, 0.2, 1);
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -80,16 +79,16 @@
 
 @keyframes fullWidth {
     0% {
-        width: 25%;
+        width: 0%;
     }
     100% {
-        width: 85%;
+        width: 100%;
 
     }
 }
 @keyframes fullHeight {
     from {
-        height: 25%;
+        height: 50px;
     }
     to {
         height: 100%;
