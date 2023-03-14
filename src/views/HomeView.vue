@@ -67,7 +67,7 @@
 .rect {
     transition: .3s ease all;
     /* width: 100%; */
-    height: 50px;
+    height: 5px;
     background: #f8f8f8;
 
     animation-name: fullWidth, fullHeight;
@@ -92,7 +92,7 @@
 }
 @keyframes fullHeight {
     from {
-        height: 50px;
+        height: 5px;
     }
     to {
         height: 100%;
