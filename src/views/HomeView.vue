@@ -5,7 +5,7 @@
             <div class="rect"></div>
         </div> -->
 
-        <main-container class="h-[calc(100vh-3rem)] flex flex-col justify-evenly">
+        <main-container class="h-[calc(100vh-3.5rem)] flex flex-col justify-evenly">
             
             <aside class="font-bold text-xl">
                 <p>Hi, I'm Jeff</p>
