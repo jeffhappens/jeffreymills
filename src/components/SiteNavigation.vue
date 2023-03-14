@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <main-container class="h-12 font-bold flex items-center justify-between">
-        <p class="text-xl">
+    <main-container class="h-14 font-bold flex items-center justify-between">
+        <p class="text-lg leading-5">
             <router-link class="home" to="/">
                 Jeff Mills /
                 <span class="text-amber-500 block md:inline">Developer Portfolio.</span>
