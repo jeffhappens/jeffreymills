@@ -5,7 +5,10 @@
 <template>
     <main-container class="h-12 font-bold flex items-center justify-between">
         <p class="text-xl">
-            <router-link class="home" to="/">Jeff Mills / <span class="text-amber-500">Developer Portfolio.</span></router-link>
+            <router-link class="home" to="/">
+                Jeff Mills /
+                <span class="text-amber-500 block md:inline">Developer Portfolio.</span>
+            </router-link>
         </p>
         <ul class="flex items-center gap-2 text-gray-500 font-normal">
             <!-- <li><router-link to="/work">Work</router-link></li>
