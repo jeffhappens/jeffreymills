@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import store from '../store'
 
 const routes = [
   {
@@ -30,6 +31,12 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
-})
+});
 
+router.beforeEach( (to, from, next) => {
+
+  store.dispatch('SET_MOBILE_MENU', false)
+  next()
+
+})
 export default router

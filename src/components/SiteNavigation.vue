@@ -1,5 +1,12 @@
 <script setup>
+import { useStore } from "vuex";
 import MainContainer from "./layout/MainContainer.vue";
+
+const store = useStore();
+
+function toggleMenu() {
+  store.dispatch("SET_MOBILE_MENU", !store.getters.mobileMenuState);
+}
 </script>
 
 <template>
@@ -10,19 +17,22 @@ import MainContainer from "./layout/MainContainer.vue";
         <span class="text-amber-500 block md:inline">Developer Portfolio.</span>
       </router-link>
     </p>
+
     <div class="flex items-center gap-5">
-      <p class="md:hidden text-gray-500 text-sm underline-offset-4 underline">
+      <p
+        @click="toggleMenu"
+        class="md:hidden text-gray-500 text-sm underline-offset-4 underline"
+      >
         MENU
       </p>
       <ul
-        class="
-          hidden
-          items-center
-          gap-2
-          text-gray-500 text-sm
-          font-normal
-          md:flex
-        "
+        class=""
+        :class="{
+          'w-full p-4 absolute top-14 left-0 z-10 bg-gray-900 text-white flex justify-around font-normal':
+            store.state.mobileMenu,
+          'hidden p-4 items-center gap-2 text-sm font-normal md:flex md:static md:bg-white md:text-gray-900':
+            !store.state.mobileMenu,
+        }"
       >
         <li><router-link to="/work">Work</router-link></li>
         <li><router-link to="/about">About</router-link></li>
@@ -54,15 +64,6 @@ import MainContainer from "./layout/MainContainer.vue";
       </ul>
     </div>
   </main-container>
-  <div id="mobile-menu" class="hidden md:hidden w-full">
-    <main-container>
-      <ul class="m-2 flex flex-col items-end gap-1 font-semibold">
-        <li><router-link to="/work">Work</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
-      </ul>
-    </main-container>
-  </div>
 </template>
 
 <style scoped>
