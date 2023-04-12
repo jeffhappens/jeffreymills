@@ -14,7 +14,7 @@
     {
         "name": "JS Tetris!",
         "description": "It's the classic Tetris game for the web written in vanilla JavaScript.",
-        "highlights": "This is a vanilla JavaScript game inspired by https://github.com/meth-meth-method/tetris. Most of the code game functionality is the same and it is understandable. I added some shiny graphics, instructions for controls, functions for calculating the level, and lines cleared, and also a panel with functionality to show the next tetrimino that is going to appear. And if you want sound, I included the theme song.",
+        "highlights": "This is a vanilla JavaScript game inspired by https://github.com/meth-meth-method/tetris. Most of the core game functionality is the same. I added some shiny graphics, instructions for controls, functions for calculating the level, and lines cleared, and also a panel with functionality to show the next tetrimino that is going to appear. And if you want sound, I included the theme song.",
         "url": "http://tetris.jeffreymills.me",
         "repoUrl": ["tetris"],
         "screenshot": "screenshot-tetris.jpg"

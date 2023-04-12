@@ -1,0 +1,33 @@
+[
+    {
+        "date": "March 2020 - Present",
+        "title": "Self Employed - Independent Contractor",
+        "description": "",
+        "skills": "Laravel, PHP, Vue3, JavaScript, CSS3, HTML5"
+    },
+    {
+        "date": "August 2017 - March 2020",
+        "title": "Skuba Design Studio - Lead Developer",
+        "description": "As Lead Developer at Skuba Design Studio it was my responsibility to oversee all aspects of development process. Working directly with Project Managers and UI/UX Designers, I made sure that deadlines were met and deliverables were of the highest quality. I would also mentor junior developers, and conduct/participate in interviews when needed.",
+        "skills": "Laravel, PHP, VueJS, JavaScript, CSS3, HTML5, Expression Engine"
+    },
+    {
+        "date": "April 2013 - August 2017",
+        "title": "Skuba Design Studio - Web Developer",
+        "description": "As a Web Developer at Skuba Design Studio, I worked under the supervision of the Lead Developer. I was tasked with developing websites for clients using the latest web standards and using technologies that made the sense most for the current project.",
+        "skills": "Laravel, PHP, VueJS, JavaScript, CSS3, HTML5, Expression Engine"
+    },
+    {
+        "date": "November 2006 - March 2013",
+        "title": "Chesapeake College - LMS Adminstrator / Web Developer",
+        "description": "At Chesapeake College I was responsible for maintaining our Learning Management System. This involved Windows Server 2003 administration, and Tier-3 technical support. When I wasn't working on LMS related activities, I would develop websites and web applications for departmental use.",
+        "skills": "JavaScript, CSS3, HTML5, WordPress, PHP, ASP.Net, Windows Server 2003, MS-SQL/T-SQL"
+    },
+    {
+        "date": "July 2005 - November 2006",
+        "title": "Internet Connection , Inc - Customer Support Tech / Web Developer",
+        "description": "My first professional role as a web developer. I started at Internet Connection as a Support Tech where I would field support tickets from our 2000+ client base. In this role I learned a lot about the Linux operating system, DNS, HTTP Protocols, Web Architecture etc.. Once I started a more developer focused role, I aided in the redesign of the company website. The website was originally developed using tables for layout. I was tasked with converting them to CSS based layouts.",
+        "skills": "PHP, JavaScript, CSS, HTML5, Bash/SH"
+    }
+
+]

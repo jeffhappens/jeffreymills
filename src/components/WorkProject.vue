@@ -7,10 +7,10 @@
 
     <div class="md:flex md:flex-row-reverse gap-5 items-start justify-between mb-2 p-6">
 
-        <img class="md:w-1/3 rounded-lg mb-8 md:mb-0" :src="`/img/${props.project.screenshot}`">
+        <img v-if="props.project.screenshot" class="md:w-1/3 rounded-lg mb-8 md:mb-0" :src="`/img/${props.project.screenshot}`">
 
         <div class="flex-1">
-            <h2 class="text-2xl font-semibold text-gray-800 my-2">{{ props.project.name }}</h2>
+            <h2 class="text-3xl font-semibold text-gray-800 my-2">{{ props.project.name }}</h2>
             <p>{{ props.project.description }}</p>
         </div>
         
