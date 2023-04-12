@@ -1,11 +1,10 @@
 <script setup>
     import MainContainer from "@/components/layout/MainContainer.vue"
+    import PageHeadline from "@/components/PageHeadline.vue"
 </script>
 
 <template>
     <main-container>
-        <div class="w-1/2 my-8 py-2 border-b-2 border-amber-400">
-            <h1 class="text-4xl font-semibold">Let's get in touch</h1>
-        </div>        
+        <PageHeadline text="Let's get in touch." />
     </main-container>
 </template>

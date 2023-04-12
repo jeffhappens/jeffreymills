@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Flex Job Listings",
+        "description": "Flex Job Listings is a job listing website for job seekers who are pursuing remote work, and employers who are seeking remote candidates. Job seekers can browse listings for free, and employers can post/manage listings for a fee.",
+        "highlights": "This web application is a standalone Vue3 front-end that communicates with a standalone REST API that I developed using the latest version of the Laravel PHP framework. The Stripe API is used for payments, VUEX is used for client state, and Vue Router powers client-side routing.",
+        "url": "https://www.flexjoblistings.com",
+        "repoUrl": [
+            "spa.jobs",
+            "api.jobs"
+        ],
+        "screenshot": "screenshot-fjl.jpg"
+    },
+
+    {
+        "name": "JS Tetris!",
+        "description": "It's the classic Tetris game for the web written in vanilla JavaScript.",
+        "highlights": "This is a vanilla JavaScript game inspired by https://github.com/meth-meth-method/tetris. Most of the code game functionality is the same and it is understandable. I added some shiny graphics, instructions for controls, functions for calculating the level, and lines cleared, and also a panel with functionality to show the next tetrimino that is going to appear. And if you want sound, I included the theme song.",
+        "url": "http://tetris.jeffreymills.me",
+        "repoUrl": ["tetris"],
+        "screenshot": "screenshot-tetris.jpg"
+    },
+
+    {
+        "name": "SVAXA",
+        "description": "SVAXA is an international dating website available in 6 different languages. It features real-time text chat with translations, a video chat component, and stripe integration for payments",
+        "highlights": "SVAXA uses VueJS for the front-end and Laravel for the backend. It integrates the Stripe API for payments, the Twilio Conversations/Video API's for text and video chat, the DeepL API for real-time translations, AMCharts for plotting on a map.",
+        "url": "https://www.svaxa.com",
+        "repoUrl": [],
+        "screenshot": "screenshot-svaxa.jpg"
+    },
+
+    {
+        "name": "321 Launch",
+        "description": "Follow Your Nola was an advertising campaign created by the New Orleans Tourism &amp; Marketing Corporation (NOTMC). NOTMC chose Skuba Design Studio, my employer at the time, to develop the web component of the campaign. I participated in the development of iterations 1 and 2, and I was the sole developer of iteration 3.",
+        "highlights": "Follow Your NOLA is a monolithic application powered by AngularJS on the front-end, and Laravel on the backend. It makes heavy use of the Google Maps API. Follow Your NOLA was a Webby honoree for Best Travel Website.",
+        "url": "http://www.321launch.com",
+        "caseStudy": "https://www.skubadesign.com/work/workPageView/321-launch-custom-website-design-and-development",
+        "repoUrl": [],
+        "screenshot": "screenshot-321.jpg"
+    },
+
+    {
+        "name": "Follow your NOLA",
+        "description": "Follow Your Nola was an advertising campaign created by the New Orleans Tourism &amp; Marketing Corporation (NOTMC). NOTMC chose Skuba Design Studio, my employer at the time, to develop the web component of the campaign. I participated in the development of iterations 1 and 2, and I was the sole developer of iteration 3.",
+        "highlights": "Follow Your NOLA is a monolithic application powered by AngularJS on the front-end, and Laravel on the backend. It makes heavy use of the Google Maps API. Follow Your NOLA was a Webby honoree for Best Travel Website.",
+        "url": "https://www.followyournola.com",
+        "caseStudy": "https://www.skubadesign.com/work/workPageView/follow-your-nola-website-design-and-development",
+        "awards": {
+            "name": "Webby: 2017 Honoree - Websites and Mobile Websites: Travel",
+            "url": "https://winners.webbyawards.com/2017/websites-and-mobile-sites/general-websites-and-mobile-sites/travel/25819/follow-your-nola"
+        },
+        "repoUrl": [],
+        "screenshot": "screenshot-fyn.jpg"
+    },
+
+    {
+        "name": "Jeffrey Mills Developer Portolfio",
+        "description": "You are here.",
+        "highlights": "This is a pure Vue3 app written using the Composition API. I use Vue-Router for routing, Vuex for state, and Tailwind for the layout/styling",
+        "url": "https://www.jeffreymills.me",
+        "caseStudy": "",
+        "repoUrl": ["jeffreymills"],
+        "screenshot": "screenshot-portfolio.jpg"
+    }
+
+]

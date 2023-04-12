@@ -21,7 +21,7 @@ function toggleMenu() {
     <div class="flex items-center gap-5">
       <p
         @click="toggleMenu"
-        class="md:hidden text-gray-500 text-sm underline-offset-4 underline"
+        class="md:hidden text-gray-500 text-sm underline-offset-4 underline cursor-pointer"
       >
         MENU
       </p>
