@@ -6,7 +6,7 @@
             name: 'JS Tetris!',
             description: 'It\'s the classic Tetris game written in vanilla JavaScript.',
             highlights: 'N/A',
-            url: 'https://tetris.jeffreymills.me',
+            url: 'http://tetris.jeffreymills.me',
             repoUrl: ['tetris']
         },
         {
