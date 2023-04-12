@@ -1,14 +1,9 @@
 <script setup>
     import MainContainer from "@/components/layout/MainContainer.vue"
+    
     const github_base =  'https://github.com/jeffhappens'
     const projects = [
-        {
-            name: 'JS Tetris!',
-            description: 'It\'s the classic Tetris game written in vanilla JavaScript.',
-            highlights: 'N/A',
-            url: 'http://tetris.jeffreymills.me',
-            repoUrl: ['tetris']
-        },
+
         {
             name: 'Flex Job Listings',
             description: 'Flex Job Listings is a job listing website for job seekers who are pursuing remote work, and employers who are seeking remote candidates. Job seekers can browse listings for free, and employers can post/manage listings for a fee.',
@@ -17,27 +12,44 @@
             repoUrl: [
                 'spa.jobs',
                 'api.jobs',
-            ]
+            ],
+            screenshot: 'screenshot-fjl.png'
         },
         {
+            name: 'JS Tetris!',
+            description: 'It\'s the classic Tetris game written in vanilla JavaScript.',
+            highlights: 'This is a vanilla JavaScript game inspired by https://github.com/meth-meth-method/tetris. Most of the code game functionality is the same and it is understandable. I added some shiny graphics, instructions for controls, functions for calculating the level, and lines cleared, and also a panel with functionality to show the next tetrimino that is going to appear. And if you want sound, I included the theme song.',
+            url: 'http://tetris.jeffreymills.me',
+            repoUrl: ['tetris'],
+            screenshot: 'screenshot-tetris.png'
+        },
+
+        {
             name: 'SVAXA',
-            description: 'SVAXA is an international dating website available in 6 different languages. It features real-time text chat with translations, a video chat component, and stripe integration for payments',
+            description: 'SVAXA is an international dating website available in 6 different languages. It features real-time text chat with translations, a video chat component, and Stripe integration for payments',
             highlights: 'SVAXA uses VueJS for the front-end and Laravel for the backend. It integrates the Stripe API for payments, the Twilio Conversations/Video API\'s for text and video chat, the DeepL API for real-time translations, AMCharts for plotting on a map.',
             url: 'https://www.svaxa.com',
-            repoUrl: []
+            repoUrl: [],
+            screenshot: 'screenshot-svaxa.png'
         },
         {
             name: '321 Launch',
-            description: '"Follow Your Nola" was an advertising campaign created by the New Orleans Tourism &amp; Marketing Corporation (NOTMC). NOTMC chose Skuba Design Studio, my employer at the time, to develop the web component of the campaign. I participated in the development of iterations 1 and 2, and I was the sole developer of iteration 3.',
-            highlights: 'Follow Your NOLA is a monolithic application powered by AngularJS on the front-end, and Laravel on the backend. It makes heavy use of the Google Maps API. Follow Your NOLA was a Webby honoree for Best Travel Website.',
+            description: '',
+            highlights: 'Expression Engine backend / AngularJS Front-end',
             url: 'http://www.321launch.com',
             caseStudy: 'https://www.skubadesign.com/work/workPageView/321-launch-custom-website-design-and-development',
-            repoUrl: []
+            repoUrl: [],
+            screenshot: 'screenshot-321.png'
         },
         {
             name: 'Follow your NOLA',
-            description: '"Follow Your Nola" was an advertising campaign created by the New Orleans Tourism &amp; Marketing Corporation (NOTMC). NOTMC chose Skuba Design Studio, my employer at the time, to develop the web component of the campaign. I participated in the development of iterations 1 and 2, and I was the sole developer of iteration 3.',
-            highlights: 'Follow Your NOLA is a monolithic application powered by AngularJS on the front-end, and Laravel on the backend. It makes heavy use of the Google Maps API. Follow Your NOLA was a Webby honoree for Best Travel Website.',
+            description: 'Follow Your Nola was an advertising campaign created by the New Orleans Tourism & Marketing Corporation (NOTMC) designed to highlight the hidden gems that New Orleans had to offer. NOTMC chose Skuba Design Studio, my employer at the time, to develop the web component of the campaign. I participated in the development of iterations 1 and 2, and I was the sole developer of iteration 3.',
+            highlights: 'Follow Your NOLA is a monolithic application powered by AngularJS on the front-end, and Laravel/MySQL on the backend. It makes heavy use of the Google Maps API.',
+            awards: {
+                name: 'Webby Awards: Honoree for Best Travel Website.',
+                url: 'https://winners.webbyawards.com/2017/websites-and-mobile-sites/general-websites-and-mobile-sites/travel/25819/follow-your-nola',
+            },
+            
             url: 'https://www.followyournola.com',
             caseStudy: 'https://www.skubadesign.com/work/workPageView/follow-your-nola-website-design-and-development',
             repoUrl: [],
@@ -51,18 +63,27 @@
 <template>
     <main-container>
         <div class="w-1/2 my-8 py-2 border-b-2 border-amber-400">
-            <h1 class="text-4xl font-semibold">Notable Projects</h1>
+            <h1 class="text-4xl font-semibold">I made these</h1>
         </div>
         <div
             v-for="project in projects"
             :key="project"
-            class="p-6 rounded-sm shadow text-gray-700 mb-6">
-            <h2 class="text-2xl font-semibold text-gray-800 my-2">{{ project.name }}</h2>
-            <p>{{ project.description }}</p>
-            <h3 class="text-md font-semibold mt-4">Tech Description:</h3>
+            class="p-6 rounded-sm shadow-md text-gray-700 mb-6">
+
+            <div class="flex flex-row-reverse items-start justify-between gap-7 mb-10">
+                <img class="w-1/4 rounded-md first-letter:shadow-sm" :src="`/img/${project.screenshot}`" />
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800 my-2">{{ project.name }}</h2>
+                    <p class="text-xl text-gray-500">{{ project.description }}</p>
+                </div>
+
+            </div>
+
+
+            <h3 class="text-lg font-semibold mt-4">Technical Details:</h3>
             <p>{{ project.highlights }}</p>
 
-            <div v-if="project.caseStudy" class="my-4">
+            <div v-if="project.caseStudy" class="my-2">
                 <p class="font-semibold">Case Study:</p>
                 <p>
                     <a
@@ -72,7 +93,9 @@
                     </a>
                 </p>
             </div>
-            <div class="my-4">
+
+            <div class="flex items-start gap-10 my-2">
+            <div class="">
                 <p class="font-semibold">Web:</p>
                 <p>
                     <a
@@ -83,7 +106,7 @@
                 </p>
             </div>
 
-            <div v-if="project.repoUrl.length">
+            <div v-if="project.repoUrl.length" class="my-2">
                 <p class="font-semibold">GitHub:</p>
                 <p>
                     <a
@@ -94,6 +117,7 @@
                         {{ github_base}}/{{ repo }}
                     </a>
                 </p>
+            </div>
             </div>
         </div>
     </main-container>
