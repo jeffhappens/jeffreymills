@@ -13,7 +13,7 @@
                 'spa.jobs',
                 'api.jobs',
             ],
-            screenshot: 'screenshot-fjl.png'
+            screenshot: 'screenshot-fjl.jpg'
         },
         {
             name: 'JS Tetris!',
@@ -21,7 +21,7 @@
             highlights: 'This is a vanilla JavaScript game inspired by https://github.com/meth-meth-method/tetris. Most of the code game functionality is the same and it is understandable. I added some shiny graphics, instructions for controls, functions for calculating the level, and lines cleared, and also a panel with functionality to show the next tetrimino that is going to appear. And if you want sound, I included the theme song.',
             url: 'http://tetris.jeffreymills.me',
             repoUrl: ['tetris'],
-            screenshot: 'screenshot-tetris.png'
+            screenshot: 'screenshot-tetris.jpg'
         },
 
         {
@@ -30,7 +30,7 @@
             highlights: 'SVAXA uses VueJS for the front-end and Laravel for the backend. It integrates the Stripe API for payments, the Twilio Conversations/Video API\'s for text and video chat, the DeepL API for real-time translations, AMCharts for plotting on a map.',
             url: 'https://www.svaxa.com',
             repoUrl: [],
-            screenshot: 'screenshot-svaxa.png'
+            screenshot: 'screenshot-svaxa.jpg'
         },
         {
             name: '321 Launch',
@@ -39,7 +39,7 @@
             url: 'http://www.321launch.com',
             caseStudy: 'https://www.skubadesign.com/work/workPageView/321-launch-custom-website-design-and-development',
             repoUrl: [],
-            screenshot: 'screenshot-321.png'
+            screenshot: 'screenshot-321.jpg'
         },
         {
             name: 'Follow your NOLA',
@@ -53,7 +53,7 @@
             url: 'https://www.followyournola.com',
             caseStudy: 'https://www.skubadesign.com/work/workPageView/follow-your-nola-website-design-and-development',
             repoUrl: [],
-            screenshot: 'screenshot-fyn.png'
+            screenshot: 'screenshot-fyn.jpg'
         },
 
 
@@ -94,8 +94,8 @@
                 </p>
             </div>
 
-            <div class="flex items-start gap-10 my-2">
-            <div class="">
+            <div class="flex items-start gap-10">
+            <div class="my-2">
                 <p class="font-semibold">Web:</p>
                 <p>
                     <a
