@@ -46,7 +46,7 @@
             </p>
         </div>
 
-        <div class="flex items-start gap-10">
+        <div class="md:flex items-start gap-10">
             <div class="">
                 <p class="font-semibold">Web:</p>
                 <p>
