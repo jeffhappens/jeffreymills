@@ -57,7 +57,6 @@
         "name": "Jeffrey Mills Developer Portolfio",
         "description": "You are here.",
         "highlights": "This is a pure Vue3 app written using the Composition API. I use Vue-Router for routing, Vuex for state, and Tailwind for the layout/styling",
-        "url": "https://www.jeffreymills.me",
         "caseStudy": "",
         "repoUrl": ["jeffreymills"],
         "screenshot": "screenshot-portfolio.jpg"

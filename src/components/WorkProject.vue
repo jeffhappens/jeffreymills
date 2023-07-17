@@ -47,10 +47,13 @@
         </div>
 
         <div class="md:flex items-start gap-10">
-            <div class="">
+            <div
+                v-if="props.project.url"
+                class="">
                 <p class="font-semibold">Web:</p>
                 <p>
                     <a
+                        target="_blank"
                         class="text-amber-500 underline"
                         :href="props.project.url">
                         {{ props.project.url }}
@@ -64,6 +67,7 @@
                     <a
                         v-for="repo in props.project.repoUrl"
                         :key="repo"
+                        target="_blank"
                         class="text-amber-500 underline block"
                         :href="`${github_base}/${repo}`">
                         {{ github_base}}/{{ repo }}

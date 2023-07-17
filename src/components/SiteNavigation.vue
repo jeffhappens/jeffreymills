@@ -41,6 +41,7 @@ function toggleMenu() {
       <ul class="flex items-center gap-2 text-gray-500 font-normal">
         <li>
           <a
+            target="_blank"
             href="https://www.linkedin.com/in/jeffreyalanmills"
             title="View my LinkedIn Profile"
           >
@@ -52,6 +53,7 @@ function toggleMenu() {
         </li>
         <li>
           <a
+            target="_blank"
             href="https://www.github.com/jeffhappens"
             title="View my Github Profile"
           >
