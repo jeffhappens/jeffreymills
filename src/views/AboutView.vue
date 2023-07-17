@@ -8,9 +8,9 @@
     <main-container>
         <PageHeadline text="About Me." />
 
-        <div class="flex items-start gap-10">
+        <div class="flex flex-col lg:flex-row items-start gap-10">
 
-            <div class="w-1/3 text-gray-400 text-2xl font-semibold mb-6 self-start sticky top-10">
+            <div class="w-full lg:w-1/3 text-gray-400 text-2xl font-semibold mb-6 self-start md:sticky top-10">
                 <h3>"Learn how to build websites" they said. "It's easy" they said.</h3>
                 <p class="mt-4 text-lg font-semibold text-gray-700">Well it wasn't, but nothing worth doing ever is.</p>
             </div>
