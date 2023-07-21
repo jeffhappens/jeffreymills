@@ -42,7 +42,7 @@
     {
         "name": "Follow your NOLA",
         "description": "Follow Your Nola was an advertising campaign created by the New Orleans Tourism &amp; Marketing Corporation (NOTMC). NOTMC chose Skuba Design Studio, my employer at the time, to develop the web component of the campaign. I participated in the development of iterations 1 and 2, and I was the sole developer of iteration 3.",
-        "highlights": "Follow Your NOLA is a monolithic application powered by AngularJS on the front-end, and Laravel on the backend. It makes heavy use of the Google Maps API. Follow Your NOLA was a Webby honoree for Best Travel Website.",
+        "highlights": "Follow Your NOLA is a monolithic application powered by AngularJS on the front-end, and Laravel on the backend. It makes heavy use of the Google Maps API. Follow Your NOLA was a Webby honoree for Best Travel Website of 2017.",
         "url": "https://www.followyournola.com",
         "caseStudy": "https://www.skubadesign.com/work/workPageView/follow-your-nola-website-design-and-development",
         "awards": {
