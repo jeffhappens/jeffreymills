@@ -21,6 +21,7 @@
                     :to="link.href"
                     :title="link.title"
                     role="button"
+                    :aria-label="`Navigate to the ${link.label} section`"
                     class="bg-sky-500 px-2 py-1 rounded-sm transition hover:bg-sky-400">
                     {{ link.label }}
                 </router-link>
