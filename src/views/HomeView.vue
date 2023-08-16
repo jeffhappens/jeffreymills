@@ -5,30 +5,29 @@
     </div>
 
     <main-container class="h-[calc(100vh-3.5rem)] flex flex-col justify-center">
-      
-      <aside class="greeting font-bold text-2xl text-gray-600 lg:text-3xl mb-8">
-        <p role="heading">Hi, I'm Jeff</p>
-      </aside>
-
-      <section class="message font-bold text-5xl md:text-6xl lg:text-7xl max-w-4xl">
-        <h1>I develop cutting edge websites and apps using modern tools like Laravel and VueJS.</h1>
-        <aside class="subtext mt-4 text-lg text-amber-500 font-semibold lg:text-xl">
-            <p role="heading">Let's turn your next design into a working product.</p>
-            <p class="flex items-center gap-4 my-8 font-normal text-base text-white">
-                <router-link
-                    v-for="link in links"
-                    :key="link"
-                    :to="link.href"
-                    :title="link.title"
-                    role="button"
-                    :aria-label="`Navigate to the ${link.label} section`"
-                    class="bg-sky-500 px-2 py-1 rounded-sm transition hover:bg-sky-400">
-                    {{ link.label }}
-                </router-link>
-            </p>
+        
+        <aside class="greeting font-bold text-2xl text-gray-600 lg:text-3xl mb-8">
+            <p role="heading">Hi, I'm Jeff</p>
         </aside>
-    </section>
 
+        <main class="message font-bold text-5xl md:text-6xl lg:text-7xl max-w-4xl">
+            <h1>I develop cutting edge websites and apps using modern tools like Laravel and VueJS.</h1>
+            <aside class="subtext mt-4 text-lg text-amber-500 font-semibold lg:text-xl">
+                <p role="heading">Let's turn your next design into a working product.</p>
+                <p class="flex items-center gap-4 my-8 font-normal text-base text-white">
+                    <router-link
+                        v-for="link in links"
+                        :key="link"
+                        :to="link.href"
+                        :title="link.title"
+                        role="button"
+                        :aria-label="`Navigate to the ${link.label} section`"
+                        class="bg-sky-500 px-2 py-1 rounded-sm transition hover:bg-sky-400">
+                        {{ link.label }}
+                    </router-link>
+                </p>
+            </aside>
+        </main>
     </main-container>
   </div>
 </template>
