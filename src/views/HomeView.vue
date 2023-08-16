@@ -7,7 +7,7 @@
     <main-container class="h-[calc(100vh-3.5rem)] flex flex-col justify-center">
       
       <aside class="greeting font-bold text-2xl text-gray-600 lg:text-3xl mb-8">
-        <p>Hi, I'm Jeff</p>
+        <p role="heading">Hi, I'm Jeff</p>
       </aside>
 
       <section class="message font-bold text-5xl md:text-6xl lg:text-7xl max-w-4xl">
