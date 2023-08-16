@@ -20,6 +20,7 @@
                     :key="link"
                     :to="link.href"
                     :title="link.title"
+                    role="button"
                     class="bg-sky-500 px-2 py-1 rounded-sm transition hover:bg-sky-400">
                     {{ link.label }}
                 </router-link>
