@@ -13,7 +13,7 @@
       <section class="message font-bold text-5xl md:text-6xl lg:text-7xl max-w-4xl">
         <h1>I develop cutting edge websites and apps using modern tools like Laravel and VueJS.</h1>
         <aside class="subtext mt-4 text-lg text-amber-500 font-semibold lg:text-xl">
-            <p>Let's turn your next design into a working product.</p>
+            <p role="heading">Let's turn your next design into a working product.</p>
             <p class="flex items-center gap-4 my-8 font-normal text-base text-white">
                 <router-link
                     v-for="link in links"
